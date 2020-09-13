@@ -1,0 +1,26 @@
+{
+  "name": "socialmedialogin",
+  "version": "1.0.0",
+  "description": "Prject to login using Oauth2 and perform CRUD operation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3kumararvind/socialMediaLogin.git"
+  },
+  "author": "Arvind Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3kumararvind/socialMediaLogin/issues"
+  },
+  "homepage": "https://github.com/3kumararvind/socialMediaLogin#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose-findorcreate": "^3.0.0",
+    "nodemon": "^2.0.4"
+  }
+}
