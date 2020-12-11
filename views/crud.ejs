@@ -9,13 +9,20 @@
   <body>
     <div class="container">
       <div class="row crud-div">
-        <div class="col-lg-8 c col-md-8 col-md-offset-5">
+        <div class="col-lg-10 c col-md-10">
           <div class="card border-info">
             <div class="card-header-div bg-success">
               <h4 class="text-center text-white">Node CRUD Operation </h4>
             </div>
             <div class="card-body">
               <div class="row">
+                <div class="col-lg-3 col-md-3">
+                  <a class="btn btn-outline-danger" href="#"><i class="fa fa-google" aria-hidden="true"> <strong>Register With Google</strong></i></a>
+
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <a class="btn btn-outline-danger" href="/auth/google"><i class="fa fa-google" aria-hidden="true"></i>  <strong>Login With Google</strong></a>
+                </div>
                 <div class="col-lg-3 col-md-3">
                   <button type="button" class="btn btn-block btn-outline-info" name="view-btn">View</button>
                 </div>
@@ -29,6 +36,41 @@
                   <button type="button" class="btn btn-block btn-outline-info" name="delete-btn">Delete</button>
                 </div>
               </div>
+
+              <div class="row">
+                  <div class="col-sm-8">
+                    <div class="card">
+                      <div class="card-body">
+
+                        <!-- Makes POST request to /login route -->
+                        <form action="/login" method="POST">
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="username">
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password">
+                          </div>
+                          <button type="submit" class="btn btn-dark">Login</button>
+                        </form>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+                          <i class="fab fa-google"></i>
+                          Sign In with Google
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
             </div>
           </div>
         </div>
